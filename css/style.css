@@ -6114,6 +6114,20 @@
   .bg-primary {
 	background-color: #E47A2E !important;
   }
+
+  .text-center.bg-secondary.p-5 {
+    position: relative;
+  }
+
+ /* iframe responsive limitado al contenedor */
+ .text-center.bg-secondary.p-5 iframe {
+    width: 100%;         /* ocupa todo el ancho del contenedor */
+    max-width: 100%;     /* nunca lo supera */
+    aspect-ratio: 16/9;  /* mantiene proporción 16:9 */
+    border: 0;
+    display: block;
+    margin: 0 auto;
+ }
   
   a.bg-primary:hover, a.bg-primary:focus,
   button.bg-primary:hover,
