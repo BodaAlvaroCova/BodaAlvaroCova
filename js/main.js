@@ -180,7 +180,7 @@ if (gallery) {
    CONTADOR
 ========================= */
 
-const fechaObjetivo = new Date("2026-12-06T18:00:00").getTime();
+const fechaObjetivo = new Date("2026-12-06T13:00:00").getTime();
 
 function actualizarContador() {
 
