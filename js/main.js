@@ -43,21 +43,44 @@ window.addEventListener("scroll", () => {
     const scrollBottom = qs('.scroll-to-bottom');
     const backTop = qs('.back-to-top');
 
-    if (window.scrollY > 200) {
-        fadeIn(navbar);
-        if (backTop) fadeIn(backTop);
-    } else {
-        fadeOut(navbar);
-        if (backTop) fadeOut(backTop);
+    if (navbar) {
+    navbar.style.display = "flex";
+    navbar.style.opacity = 1;
     }
 
+    if (window.scrollY > 200) {
+        if (backTop) fadeIn(backTop);
+    } else {
+    if (backTop) fadeOut(backTop);
+    }
     if (window.scrollY > 100) {
         if (scrollBottom) fadeOut(scrollBottom);
     } else {
         if (scrollBottom) fadeIn(scrollBottom);
     }
 
+    // 👇 SOLO MÓVIL: mostrar menú al hacer scroll
+    if (window.innerWidth <= 768 && navMenu && navbar) {
+        if (window.scrollY > 200) {
+            navMenu.classList.add("mobile-visible");
+            navbar.classList.add("mobile-menu-active");
+        } else {
+            navMenu.classList.remove("mobile-visible");
+            navbar.classList.remove("mobile-menu-active");
+        }
+    }
+
 });
+
+const navToggle = qs("#navToggle");
+const navMenu = qs("#navMenu");
+
+if (navToggle && navMenu) {
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+    });
+}
+
 
 /* =========================
    SMOOTH SCROLL NAV LINKS
