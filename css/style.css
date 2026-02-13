@@ -3979,6 +3979,7 @@
   .nav-link {
 	display: block;
 	padding: 0.5rem 1rem;
+	font-size: small;
   }
   
   .nav-link:hover, .nav-link:focus {
@@ -4104,11 +4105,8 @@
 
     .navbar.mobile-menu-active .nav-menu {
         display: flex;
-        flex-direction: row;   /* horizontal */
-        gap: 10px;             /* compacto */
         justify-content: center;
         width: 100%;
-        white-space: nowrap;
     }
 
     .navbar.mobile-menu-active .nav-container {
@@ -9067,6 +9065,10 @@
   .text-primary {
 	color: #E47A2E !important;
   }
+
+  .fondo-confirmacion {
+    background-color: #f3f0eb; /* beige suave elegante */
+  }
   
   a.text-primary:hover, a.text-primary:focus {
 	color: #af5617 !important;
@@ -9248,10 +9250,52 @@
 	  border-color: #dee2e6;
 	}
   }
+
+  .regalo-section {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.regalo-subtitle {
+    letter-spacing: 6px;
+    font-size: 14px;
+    color: #b08d57;
+    margin-bottom: 25px;
+}
+
+.regalo-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: #4a3f35;
+    margin-bottom: 25px;
+}
+
+.regalo-line {
+    width: 60px;
+    height: 1px;
+    background-color: #b08d57;
+    margin: 0 auto 30px auto;
+}
+
+.regalo-text {
+    font-size: 18px;
+    color: #818491;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.regalo-account {
+    margin-top: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #4a3f35;
+}
   
   /********** Template CSS ************/
-  .font-secondary {
-	font-family: 'Great Vibes', cursive;
+  /*font-family: 'Great Vibes', cursive;*/
+  .font-secondary {	
+	font-family: "Times New Roman", Times, serif;
   }
   
   .btn-square {
@@ -9318,25 +9362,6 @@
 	margin-bottom: 30px;
   }
   
-  .section-title::before {
-	position: absolute;
-	content: "";
-	width: 60px;
-	height: 2px;
-	bottom: 11px;
-	left: calc(50% - 80px);
-	background: #E47A2E;
-  }
-  
-  .section-title::after {
-	position: absolute;
-	content: "";
-	width: 60px;
-	height: 2px;
-	bottom: 11px;
-	right: calc(50% - 80px);
-	background: #E47A2E;
-  }
   
   .btn-play {
 	position: relative;
