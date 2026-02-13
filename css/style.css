@@ -3977,8 +3977,8 @@
 }
   
   .nav-link {
-	display: block;
-	padding: 0.5rem 1rem;
+	display: flex;
+	padding: 0.5% 0.8%;
 	font-size: small;
   }
   
@@ -4069,7 +4069,7 @@
         background: rgba(0, 0, 0, 0.9);
 
         display: none;
-        padding: 15px 0;
+        padding: 15px 45px;
     }
 
     .nav-menu.open {
@@ -4104,7 +4104,7 @@
     }
 
     .navbar.mobile-menu-active .nav-menu {
-        display: flex;
+        display: -webkit-inline-box;
         justify-content: center;
         width: 100%;
     }
