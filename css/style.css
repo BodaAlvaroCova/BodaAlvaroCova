@@ -4113,6 +4113,50 @@
         justify-content: center; /* centrar menú en lugar del logo */
     }
 }
+
+/* Botón elegante */
+.confirmacion-btn {
+    display: inline-block;
+    background-color: #E47A2E;
+    color: #E47A2E;
+    padding: 16px 60px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.confirmacion-btn:hover {
+    background-color: #E47A2E;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Tablet y móvil */
+@media (max-width: 768px) {
+
+    .confirmacion-btn {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding: 18px 20px;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+}
+
+/*  Móviles pequeños */
+@media (max-width: 400px) {
+
+    .confirmacion-btn {
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 16px 15px;
+    }
+
+}
   
   .card {
 	position: relative;
@@ -9561,4 +9605,3 @@
 	  border-right: none !important;
 	}
   }
-  
